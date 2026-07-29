@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="570" viewBox="0 0 1600 570">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3273dc"/></marker></defs>
+<rect width="1600" height="570" fill="#fff"/>
+<rect x="70" y="205" width="220" height="110" rx="8" fill="#f7f7f7" stroke="#b9b9b9" stroke-width="2"/>
+<text x="180" y="250" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#242424">User Speech</text>
+<text x="180" y="287" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">streaming input</text>
+<rect x="390" y="110" width="300" height="160" rx="10" fill="#eef5ff" stroke="#3273dc" stroke-width="3"/>
+<text x="540" y="168" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#242424">Listening Stream</text>
+<text x="540" y="213" text-anchor="middle" font-family="Arial" font-size="21" fill="#666">always listening</text>
+<rect x="800" y="195" width="320" height="155" rx="10" fill="#f4f8f5" stroke="#48a868" stroke-width="3"/>
+<text x="960" y="250" text-anchor="middle" font-family="Arial" font-size="27" font-weight="700" fill="#242424">Semantic Controller</text>
+<text x="960" y="294" text-anchor="middle" font-family="Arial" font-size="20" fill="#666">hold · speak · stop · continue</text>
+<rect x="1230" y="110" width="300" height="160" rx="10" fill="#eef5ff" stroke="#3273dc" stroke-width="3"/>
+<text x="1380" y="168" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#242424">Speaking Stream</text>
+<text x="1380" y="213" text-anchor="middle" font-family="Arial" font-size="21" fill="#666">speech-token output</text>
+<rect x="1230" y="395" width="300" height="100" rx="8" fill="#f7f7f7" stroke="#b9b9b9" stroke-width="2"/>
+<text x="1380" y="438" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#242424">Model Speech</text>
+<text x="1380" y="474" text-anchor="middle" font-family="Arial" font-size="19" fill="#666">streaming audio</text>
+<line x1="290" y1="260" x2="380" y2="210" stroke="#3273dc" stroke-width="4" marker-end="url(#a)"/>
+<line x1="690" y1="190" x2="790" y2="245" stroke="#3273dc" stroke-width="4" marker-end="url(#a)"/>
+<line x1="1120" y1="245" x2="1220" y2="190" stroke="#3273dc" stroke-width="4" marker-end="url(#a)"/>
+<line x1="1380" y1="270" x2="1380" y2="385" stroke="#3273dc" stroke-width="4" marker-end="url(#a)"/>
+<path d="M1380 505 C1380 550,540 550,540 285" fill="none" stroke="#3273dc" stroke-width="3" stroke-dasharray="10 9" marker-end="url(#a)"/>
+<text x="940" y="542" text-anchor="middle" font-family="Arial" font-size="19" fill="#666">listening remains active while speaking</text>
+</svg>

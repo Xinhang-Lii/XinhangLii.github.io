@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#f7f7f7"/><rect x="80" y="70" width="1440" height="760" rx="14" fill="#fff" stroke="#dedede" stroke-width="3"/>
+<polyline points="160,455 220,455 255,405 290,515 325,380 360,540 395,420 430,490 465,390 500,525 535,435 570,468 605,365 640,545 675,418 710,492 745,382 780,532 815,430 850,470 885,392 920,522 955,420 990,486 1025,370 1060,540 1095,428 1130,472 1165,405 1200,512 1235,438 1270,469 1305,420 1340,495 1385,455 1440,455" fill="none" stroke="#3273dc" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="800" cy="315" r="72" fill="#363636"/><path d="M780 274 L780 356 L850 315 Z" fill="#fff"/>
+<text x="800" y="610" text-anchor="middle" font-family="Arial" font-size="43" font-weight="700" fill="#242424">DEMO 2</text>
+<text x="800" y="670" text-anchor="middle" font-family="Arial" font-size="29" fill="#555">Multi-turn Question Answering</text>
+</svg>
