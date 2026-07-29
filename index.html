@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta
+    name="description"
+    content="Streaming EchoX: Always listening, semantic check, full-duplex."
+  >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Streaming EchoX</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+  >
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-1 project-title">Streaming EchoX</h1>
+        <p class="subtitle is-4 project-tagline">
+          Always listening · semantic check · full-duplex
+        </p>
+        <p class="project-intro">
+          A simple demo of our streaming full-duplex speech model.
+          The system is still being iterated and improved, and we plan to open-source it in the future.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered section-title">Overview</h2>
+
+        <div class="content is-medium overview-text">
+          <p>
+            Streaming EchoX uses separate listening and speaking streams.
+            The listening stream remains active, while a semantic controller
+            decides when the model should speak, stop, or continue.
+            The model directly generates speech tokens for streaming response.
+          </p>
+
+          <p>
+            This page presents a simple research demo.
+            The model is still under active development and will be continuously upgraded.
+            We plan to release the code and model in the future.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="demos">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered section-title">Video Demos</h2>
+
+      <div class="demo-stack">
+        <article class="card demo-card">
+          <header class="card-header">
+            <p class="card-header-title demo-title">
+              Single-turn Question Answering
+            </p>
+          </header>
+
+          <div class="card-content">
+            <video
+              class="demo-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="static/images/demo-1-poster.svg"
+            >
+              <source src="static/videos/demo-1.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p class="demo-caption">
+            One question followed by one complete response.
+          </p>
+        </article>
+
+        <article class="card demo-card">
+          <header class="card-header">
+            <p class="card-header-title demo-title">
+              Multi-turn Question Answering
+            </p>
+          </header>
+
+          <div class="card-content">
+            <video
+              class="demo-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="static/images/demo-2-poster.svg"
+            >
+              <source src="static/videos/demo-2.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p class="demo-caption">
+            Two questions and two responses in the same session.
+          </p>
+        </article>
+
+        <article class="card demo-card">
+          <header class="card-header">
+            <p class="card-header-title demo-title">
+              Barge-in Interruption
+            </p>
+          </header>
+
+          <div class="card-content">
+            <video
+              class="demo-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="static/images/demo-3-poster.svg"
+            >
+              <source src="static/videos/demo-3.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p class="demo-caption">
+            The user interrupts an ongoing response with a new question.
+          </p>
+        </article>
+
+        <article class="card demo-card">
+          <header class="card-header">
+            <p class="card-header-title demo-title">
+              Context-aware Follow-up
+            </p>
+          </header>
+
+          <div class="card-content">
+            <video
+              class="demo-video"
+              controls
+              playsinline
+              preload="metadata"
+              poster="static/images/demo-4-poster.svg"
+            >
+              <source src="static/videos/demo-4.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <p class="demo-caption">
+            A related follow-up question that depends on the previous turn.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered section-title">
+          Semantic Control
+        </h2>
+
+        <div class="control-list">
+          <div class="control-row">
+            <div class="control-name">HOLD</div>
+            <div class="control-text">
+              The user has not finished speaking.
+            </div>
+          </div>
+
+          <div class="control-row">
+            <div class="control-name">SPEAK</div>
+            <div class="control-text">
+              The user input is complete and answerable.
+            </div>
+          </div>
+
+          <div class="control-row">
+            <div class="control-name">STOP</div>
+            <div class="control-text">
+              A new user intent interrupts the current response.
+            </div>
+          </div>
+
+          <div class="control-row">
+            <div class="control-name">CONTINUE</div>
+            <div class="control-text">
+              A short backchannel does not interrupt the response.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      Recorded demos from a private research prototype.
+    </div>
+  </footer>
+</body>
+</html>
