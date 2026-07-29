@@ -167,3 +167,22 @@ body {
 .overview-text p:last-child {
   margin-bottom: 0;
 }
+.related-research {
+  border-top: 1px solid #eeeeee;
+}
+
+.research-content {
+  max-width: 780px;
+  margin: 0 auto;
+  color: #555555;
+}
+
+.research-content p {
+  line-height: 1.75;
+}
+
+.research-status {
+  color: #777777;
+  font-size: 0.95rem;
+  font-style: italic;
+}
